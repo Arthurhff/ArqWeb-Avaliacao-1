@@ -1,0 +1,11 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Ver Departamento</title></head>
+<body>
+<h1>Departamento</h1>
+<p>ID: <span th:text="${departamento.id}"></span></p>
+<p>Nome: <span th:text="${departamento.nome}"></span></p>
+<p>Localização: <span th:text="${departamento.localizacao}"></span></p>
+<a th:href="@{/departamentos}">Voltar</a>
+</body>
+</html>

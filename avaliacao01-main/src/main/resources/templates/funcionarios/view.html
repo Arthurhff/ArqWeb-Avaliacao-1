@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Ver Funcionário</title></head>
+<body>
+<h1>Funcionário</h1>
+<p>ID: <span th:text="${funcionario.id}"></span></p>
+<p>Nome: <span th:text="${funcionario.nome}"></span></p>
+<p>Email: <span th:text="${funcionario.email}"></span></p>
+<p>Data Admissão: <span th:text="${funcionario.dataAdmissao}"></span></p>
+<p>Departamento: <span th:text="${funcionario.departamento != null ? funcionario.departamento.nome : ''}"></span></p>
+<a th:href="@{/funcionarios}">Voltar</a>
+</body>
+</html>
